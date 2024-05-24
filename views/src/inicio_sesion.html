@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es" class="w-full h-full">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <title>Restaurante</title>
+</head>
+
+<body class="bg w-full h-full">
+    <div class="main w-full h-full">
+        <div class="w-full h-full flex items-center justify-center">
+            <form action="" method="post">
+                <section class="text-center items-center border-2 border-[#ffffff]/[0.6] backdrop-blur-sm p-10 rounded-xl shadow-xl shadow-[#b8b392]">
+                    <div class="">
+                        <h1 class="font-semibold text-2xl">Iniciar sesion</h1>
+                    </div>
+                    <div class="grid grid-cols-1">
+                        <div class="py-2">
+                            <label for="user_id" class="font-medium">ID</label><br>
+                            <input type="text" id="user_id" class="w-[280px] h-7 py-1 px-[6px] rounded-md ring-0 focus:ring-0 border-0" required>
+                        </div>
+                        <div class="py2">
+                            <label for="tipo_id" class="font-medium">Tipo ID</label><br>
+                            <select id="tipo_id" class="w-[280px] min-h-min py-1 px-[6px] rounded-md ring-0 focus:ring-0 border-0" required>
+                                <option value="">Seleccione una opcion</option>
+                                <option value="CC">Cedula de ciudadania</option>
+                                <option value="V_Work">Visa de trabajo</option>
+                                <option value="PEP">PEP</option>
+                            </select>
+                        </div>
+                        <div class="py-2">
+                            <label for="password" class="font-medium">Contraseña</label><br>
+                            <input type="password" id="password" class="w-[280px] h-7 py-1 px-[6px] rounded-md ring-0 focus:ring-0 border-0" required   >
+                        </div>
+                    </div>
+                    <div class="pt-3">
+                        <input type="submit" id="submit" class="bg-[#b8b392] p-2 w-20 rounded-md hover:cursor-pointer" value="Entrar"/>
+                    </div>
+                </section>
+            </form>
+            
+        </div>
+    </div>
+</body>
+
+</html>
