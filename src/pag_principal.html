@@ -10,5 +10,217 @@
 </head>
 
 <body class="bg w-full h-full">
+    <div>
+      <header class="fixed z-50 flex w-full items-center bg-[#e5ddbd] px-4 py-3 shadow-xl">
+        <div class="grid grid-cols-3 justify-items-stretch content-center w-full">
+          <div class="justify-self-start">
+            <img src="../views/src/imgs/logo.png" class="w-10"/>
+          </div>
+          <div class="justify-self-center">
+            <nav class="w-full h-full flex items-center">
+              <ul
+                class="flex list-none items-center font-medium"
+              >
+                <li
+                  class="rounded-lg px-3 mx-2 py-1 delay-100 duration-200 hover:bg-[#cbb679]/40"
+                >
+                  <a href="#" onclick="loadContent('inicio')">Inicio</a>
+                </li>
+                <li
+                  class="rounded-lg px-3 mx-2 py-1 delay-100 duration-200 hover:bg-[#cbb679]/40"
+                >
+                  <a href="#" onclick="loadContent('menu')">Menú</a>
+                </li>
+                <li
+                  class="rounded-lg px-3 mx-2 py-1 delay-100 duration-200 hover:bg-[#cbb679]/40"
+                >
+                  <a href="#" onclick="loadContent('reserva')">Reserva</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="justify-self-end">
+            <button class="bg-[#d4ca9e] hover:bg-[#cbb679] py-1.5 px-4 rounded-lg"><a href="">Iniciar Sesion</a></button>
+          </div>
+        </div>
+      </header>
+    </div>
+    <div class="w-full h-full">
+      <section id="content" class="w-full h-full grid content-center text-center">
+        <!--CONTENIDO-->
+      </section>
+    </div>
+
+    <script>
+      function loadContent(section) {
+          const content = {
+              inicio: `
+                  <div class="grid justify-items-center">
+                    <div class="p-2.5 rounded-lg bg-[#f8f6ee]/80 shadow-2xl shadow-[#a6a18c57] w-[750px]">
+                      <h1 class="font-semibold text-lg">Bienvenidos</h1>
+                      <p>Nos apasiona crear experiencias gastronómicas únicas que deleiten tus sentidos.<br>
+                      Desde nuestro primer día, hemos estado comprometidos con ofrecer comida de la más<br>
+                      alta calidad, preparada con ingredientes frescos y locales. Cada plato es una obra<br>
+                      de arte, diseñada para brindarte una experiencia culinaria inigualable.</p><br>
+                      <h1 class="font-semibold text-lg">Nuestra Filosofía</h1>
+                      <p>Creemos en la importancia de los ingredientes frescos y de alta calidad. Trabajamos<br>
+                      estrechamente con agricultores y proveedores locales para asegurarnos de que cada plato<br>
+                      que servimos esté hecho con los mejores productos disponibles. Nuestra filosofía se centra<br>
+                      en la sostenibilidad y el respeto por el medio ambiente, lo que se refleja en cada aspecto<br>
+                      de nuestro negocio.</p><br>
+                      <h1 class="font-semibold text-lg">Únete a nosotros</h1>
+                      <p>Te invitamos a visitarnos y descubrir por ti mismo lo que hace que nuestro restaurante<br>
+                      sea tan especial. Ya sea que vengas a disfrutar de nuestro menú diario, nuestros eventos<br>
+                      especiales, o simplemente a tomar un café, esperamos poder darte la bienvenida y compartir<br>
+                      contigo nuestra pasión por la buena comida.</p><br>
+                    </div>
+                  </div>
+              `,
+              menu: `
+                  <div class="grid justify-items-center">
+                    <div class="p-2.5 rounded-lg bg-[#f8f6ee]/80 shadow-2xl shadow-[#a6a18c57] w-[450px]">
+                      <h1 class="font-semibold text-lg">Menú</h1>
+                      <p>Aquí puedes encontrar nuestros platillos...</p>
+                    </div>
+                  </div>
+
+                  <div class="grid grid-cols-6 gap-6 mx-5 mt-5">
+
+                    <div class="w-full h-full">
+                      <div class="bg-[#cbb679] p-2.5 rounded-lg w-full h-full">
+                        <div class="flex justify-center">
+                          <img src="../views/src/imgs/menu/lomo.jpg" class="object-cover max-w-[150px] rounded-lg	"/>
+                        </div>
+                        <div>
+                          <span class="font-medium">Lomo Saltado</span>
+                        </div>
+                        <div>
+                          <span class="font-[350] text-sm">¡Deléitate con nuestro Lomo Saltado! Jugoso lomo de res, 
+                          salteado con cebolla, tomate y pimientos, acompañado de papas fritas crujientes. ¡Una 
+                          explosión de sabores peruanos que te transportará a Lima!</span>
+                        </div>
+                        <div>
+                          <span class="font-semibold">$25,000</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="w-full h-full">
+                      <div class="bg-[#cbb679] p-2.5 rounded-lg w-full h-full">
+                        <div class="flex justify-center">
+                          <img src="../views/src/imgs/menu/risoto.jpg" class="object-cover max-w-[150px] rounded-lg	"/>
+                        </div>
+                        <div>
+                          <span class="font-medium">Risotto de champiñones</span>
+                        </div>
+                        <div>
+                          <span class="font-[350] text-sm">¡Sumérgete en el lujo del Risotto de Champiñones! Cada 
+                          bocado te lleva a un viaje de cremosidad y sabor, con la combinación perfecta de arroz, 
+                          champiñones frescos y queso parmesano.</span>
+                        </div>
+                        <div>
+                          <span class="font-semibold">$30,000</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="w-full h-full">
+                      <div class="bg-[#cbb679] p-2.5 rounded-lg w-full h-full">
+                        <div class="flex justify-center">
+                          <img src="../views/src/imgs/menu/tacos.jpg" class="object-cover max-w-[150px] rounded-lg	"/>
+                        </div>
+                        <div>
+                          <span class="font-medium">Tacos al pastor</span>
+                        </div>
+                        <div>
+                          <span class="font-[350] text-sm">¡Satisface tus antojos con nuestros Tacos al Pastor! 
+                          Experimenta la auténtica explosión de sabores mexicanos: carne de cerdo marinada, 
+                          tortillas de maíz, cebolla, cilantro y salsa picante. ¡Una fiesta en tu paladar!</span>
+                        </div>
+                        <div>
+                          <span class="font-semibold">$20,000</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="w-full h-full">
+                      <div class="bg-[#cbb679] p-2.5 rounded-lg w-full h-full">
+                        <div class="flex justify-center">
+                          <img src="../views/src/imgs/menu/pasta.jpg" class="object-cover max-w-[150px] rounded-lg	"/>
+                        </div>
+                        <div>
+                          <span class="font-medium">Pasta carbonara</span>
+                        </div>
+                        <div>
+                          <span class="font-[350] text-sm">Disfruta de la riqueza italiana con nuestro pasta carbonara. 
+                          Fettuccine en una salsa cremosa de huevo, queso parmesano y panceta crujiente. ¡Un clásico 
+                          reconfortante que te transportará a Roma!</span>
+                        </div>
+                        <div>
+                          <span class="font-semibold">$28,000</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="w-full h-full">
+                      <div class="bg-[#cbb679] p-2.5 rounded-lg w-full h-full">
+                        <div class="flex justify-center">
+                          <img src="../views/src/imgs/menu/ensalada.png" class="object-cover max-w-[150px] rounded-lg	"/>
+                        </div>
+                        <div>
+                          <span class="font-medium">Ensalada de quinoa</span>
+                        </div>
+                        <div>
+                          <span class="font-[350] text-sm">Descubre una opción ligera y saludable con nuestra 
+                          ensalada de quinoa. Quinoa con pepino, tomate, aguacate y aderezo de limón y cilantro. 
+                          ¡Frescura y nutrición en cada bocado!</span>
+                        </div>
+                        <div>
+                          <span class="font-semibold">$25,000</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="w-full h-full">
+                      <div class="bg-[#cbb679] p-2.5 rounded-lg w-full h-full">
+                        <div class="flex justify-center">
+                          <img src="../views/src/imgs/menu/bandeja.png" class="object-cover max-w-[150px] rounded-lg	"/>
+                        </div>
+                        <div>
+                          <span class="font-medium">Bandeja Paisa</span>
+                        </div>
+                        <div>
+                          <span class="font-[350] text-sm">¡Disfruta de la auténtica Bandeja Paisa! Una experiencia 
+                          culinaria colombiana completa con arroz, frijoles, carne, chicharrón, huevo, plátano, 
+                          aguacate y arepa. ¡Una explosión de sabores que te hará sentir como en casa!</span>
+                        </div>
+                        <div>
+                          <span class="font-semibold">$35,000</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              `,
+              reserva: `
+                  <div class="grid justify-items-center">
+                    <div class="p-2.5 rounded-lg bg-[#f8f6ee]/80 shadow-2xl shadow-[#a6a18c57] w-[750px]">
+                      <h1 class="font-semibold text-lg">Reserva</h1>
+                      <p>Aquí puedes hacer una reserva</p>
+                    </div>
+                    <div class="">
+                      <iframe 
+                      src="https://calendar.google.com/calendar/embed?height=400&wkst=1&ctz=America%2FBogota&bgcolor=%23bb9c54&showTz=0&showCalendars=0&title=Reservacion&showDate=0&showTabs=0&src=OTYwNzcyNzA1ZTI2MzlhYTViY2VkNmMwMzM3MzhjOWQ2MDU2YTQzZmM4NDMyNmRjYWE3ZGQ4ZDYxZDk3MWU2NkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23C0CA33" style="border-width:0" width="750" height="400" frameborder="0" scrolling="no"
+                      class="mt-4 rounded-lg"
+                      >
+                      </iframe>
+                    </div>
+                  </div>
+              `
+          };
+          document.getElementById('content').innerHTML = content[section];
+      }
+
+      window.onload = () => loadContent('inicio');
+    </script>
 </body>
 </html>
