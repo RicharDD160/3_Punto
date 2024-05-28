@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Bienvenido/a <%= user.nombre %> </h1>
+    <h1>Realizar Compra </h1>
+    <form action="/views/src/compravista.ejs" method="POST">
+    <div class="grid grid-cols-1">
+        <div class="py-2">
+            <label for="" class="font-medium">Id_pedido</label><br>
+            <input type="number" id="id_pedido" name="id_pedido" class="w-[280px] h-7 py-1 px-[6px] rounded-md ring-0 focus:ring-0 border-0" required>
+        </div>
+        <div class="py-2">
+            <label for="" class="font-medium">Nombre Pedido</label><br>
+            <input type="text" id="user_id" name="Nom_pedido" class="w-[280px] h-7 py-1 px-[6px] rounded-md ring-0 focus:ring-0 border-0" required>
+        </div>
+        <div class="py-2">
+            <label for="user_id" class="font-medium">Cantidad por pagar</label><br>
+            <input type="text" id="user_id" name="Cant_Pagar" class="w-[280px] h-7 py-1 px-[6px] rounded-md ring-0 focus:ring-0 border-0" required>
+        </div>
+    </div>
+    <div class="pt-3">
+        <input type="submit" id="submit" class="bg-[#b8b392] p-2 w-20 rounded-md hover:cursor-pointer" value="pagar"/>
+    </div>
+</section>
+</form>
+
+</div>
+</div>
+</body>
+</html>

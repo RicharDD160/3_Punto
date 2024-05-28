@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante</title>
+</head>
+<body>
+    
+    <button id="btnRegistro">Ir a Registro</button>
+
+    <!-- Script para redirigir cuando se hace clic en el botón -->
+    <script>
+        // Obtener referencia al botón
+        var btnRegistro = document.getElementById("btnRegistro");
+
+        // Agregar un evento de clic al botón
+        btnRegistro.addEventListener("click", function() {
+            // Redirigir a la página de registro
+            window.location.href = "/registro";
+        });
+    </script>
+</body>
+</html>
